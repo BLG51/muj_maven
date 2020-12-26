@@ -23,15 +23,18 @@ public class IndexTextController extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-
+        super.init();
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    PrintWriter pw = new PrintWriter(resp.getWriter());
+    pw.write("hey");
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println(1);
         JsonObject json = new Gson().fromJson(req.getReader(), JsonObject.class);
         String text = json.get("text").getAsString();
         text+= " changed";
@@ -42,8 +45,10 @@ public class IndexTextController extends HttpServlet {
         Map<String, String> data = new HashMap<>();
         data.put("text",text);
         String str = new Gson().toJson(data);
+        System.out.println(str);
         pw.print(str);
         pw.flush(); pw.close();
+        System.out.println(2);
     }
 }
 

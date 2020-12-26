@@ -1,64 +1,68 @@
-.navbar{
-background: #157DD9;
-position: fixed;
-width: 100%;
-background-size: cover; 
-
-}
-.nav-link , .navbar-brand{
-	color: #f4f4f4;
-}
-.header{
-	background-image: url(canada01.jpg);
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover; 
+.navbar {
+    background: #157DD9;
+    position: fixed;
+    width: 100%;
+    background-size: cover;
+    z-index: 999;
 }
 
-
-.description{
-	color: #F36C08;
-	position: absolute;
-	top:40%;
+.nav-link, .navbar-brand {
+    color: #f4f4f4;
 }
 
-.description p{
-	color: #BB9446;
-	font-size: 50%;
-	width: 50%;
-}
-.description button{
-	margin-top: 2px;
-	color: #F36C08;
-	border-color: #F36C08;
-}
-.description button:hover{
-	background-color: #F36C08;
+.header {
+    background-image: url(canada01.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
-.portfolio h2{
-	color: #F36C08;
-	left:60%;
+
+.description {
+    color: #F36C08;
+    position: absolute;
+    top: 40%;
 }
 
-.portfolio{
-	background: #E5E7E9;
+.description p {
+    color: #BB9446;
+    font-size: 50%;
+    width: 50%;
 }
 
-.portfolio-name{
-	text-align: center;
+.description button {
+    margin-top: 2px;
+    color: #F36C08;
+    border-color: #F36C08;
 }
 
-.portfolio .btn{
-		color: #00000;
-	border-color: #F36C08;
-	background-color: #F36C08;
+.description button:hover {
+    background-color: #F36C08;
 }
 
-.portfolio .btn:hover{
-	background-color: #E48E19;
+.portfolio h2 {
+    color: #F36C08;
+    left: 60%;
 }
 
-h2{
-	font-family: "Magneto";
+.portfolio {
+    background: #E5E7E9;
+}
+
+.portfolio-name {
+    text-align: center;
+}
+
+.portfolio .btn {
+    color: #000000;
+    border-color: #F36C08;
+    background-color: #F36C08;
+}
+
+.portfolio .btn:hover {
+    background-color: #E48E19;
+}
+
+.input-group {
+    width: 40%;
 }
