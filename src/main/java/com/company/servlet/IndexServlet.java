@@ -1,7 +1,5 @@
 package com.company.servlet;
 
-package com.company.servlet;
-
 import com.company.model.User;
 import com.company.service.UserService;
 
@@ -24,11 +22,11 @@ public class IndexServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-            req.getServletContext().getRequestDispatcher("/index.html").forward(req, resp);
+        req.getServletContext().getRequestDispatcher("/index.html").forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-
+    }
 }

@@ -28,6 +28,7 @@ background-size: cover;
 	width: 50%;
 }
 .description button{
+	margin-top: 2px;
 	color: #F36C08;
 	border-color: #F36C08;
 }
