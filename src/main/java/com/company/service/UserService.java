@@ -11,6 +11,10 @@ public class UserService {
         return udao.get(id);
     }
 
+    public User get(String email) {
+        return udao.get(email);
+    }
+
     public void create(User item) {
         udao.create(item);
     }
